@@ -87,7 +87,6 @@ func ExecuteLambda(ctx context.Context, request events.APIGatewayProxyRequest) (
 		return resAPI.CustomResp, nil
 	}
 
-	return res, nil
 }
 
 func ValidateParams() bool {

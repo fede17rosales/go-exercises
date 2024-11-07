@@ -13,7 +13,7 @@ func Register(ctx context.Context) models.RespAPI {
 	var r models.RespAPI
 	r.Status = 400
 
-	fmt.Println("Entre a Registro")
+	fmt.Println("Ingrese a Registro")
 
 	body := ctx.Value(models.Key("body")).(string)
 	err := json.Unmarshal([]byte(body), &t)
